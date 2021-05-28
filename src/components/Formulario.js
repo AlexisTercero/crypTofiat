@@ -1,0 +1,35 @@
+import React from 'react'
+import styled from "@emotion/styled"
+
+const Formulario = () => {
+    return (
+        <form>
+            <Boton 
+                type="submit"
+                value="Calcular"
+            />
+        </form>
+    )
+}
+
+export default Formulario
+
+const Boton = styled.input`
+    margin-top: 20px;
+    font-weight: bold;
+    font-size:20px;
+    padding: 10px;
+    background-color: grey;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    color: black;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: yellow;
+        color: black;
+        cursor:pointer;
+    }
+
+`
