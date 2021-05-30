@@ -1,17 +1,17 @@
 body {
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(17, 11, 11);
 }
 .error {
-  background-color: #b7322c;
+  background-color: #dd0b00;
   padding: 1rem;
-  color: white;
+  color: rgb(251, 237, 237);
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 .resultado {
-  color: white;
+  color: rgb(255, 248, 248);
 }
 .resultado h2 {
   font-weight: bold;
