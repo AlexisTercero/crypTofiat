@@ -6,7 +6,7 @@ import Error from "./Error";
 import axios from "axios";
 
 
-const Formulario = () => {
+const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
     //state del listado criptomonedas
     const [ listacripto, guardarCriptomonedas ] = useState([]);
     const [ error, guardarError ] = useState(false);
@@ -47,6 +47,8 @@ const Formulario = () => {
         }
         //pasar los datos al componente principal
         guardarError(false);
+        guardarMoneda(moneda);
+        guardarCriptomoneda(criptomoneda);
     }
     return (  
         <form
