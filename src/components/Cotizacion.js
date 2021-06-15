@@ -7,12 +7,13 @@ const Cotizacion = ({resultado}) => {
 
     return (
        <ResultadoDiv>
-            <Precio>El precio es: <span>{resultado.PRICE}</span> </Precio>
-            <Info>Precio más alto del día: <span>{resultado.HIGHDAY}</span> </Info>
-            <Info>Precio más bajo del día: <span>{resultado.LOWDAY}</span> </Info>
-            <Info>Variación últimas 24 horas: <span>{resultado.CHANGEPCT24HOUR}</span> </Info>
-            <Info>Última Actualización: <span>{resultado.LASTUPDATE}</span> </Info>
-
+            <Imgprice>
+                <Logo src={	`https://www.cryptocompare.com/${resultado.IMAGEURL}`}></Logo><Precio><span>{resultado.PRICE}</span><br></br><Info>High: <span className="green">{resultado.HIGHDAY}</span> Low: <span className="red">{resultado.LOWDAY}</span> 24hs</Info> </Precio>
+                
+            </Imgprice>
+            
+            <Info>24hs: <span>{resultado.CHANGEPCT24HOUR}%</span> </Info>
+            <Info>Last Update: <span>{resultado.LASTUPDATE}</span> </Info>
        </ResultadoDiv>
     );
 }
@@ -20,19 +21,41 @@ const Cotizacion = ({resultado}) => {
 export default Cotizacion
 
 const ResultadoDiv = styled.div`
-    color: #FFF;
+    background:transparent;
+    color: white;
+    border: 1px solid blue;
+    /* outline: 0.3px solid blue; */
     font-family: Arial, Helvetica, sans-serif;
+    margin-top:24px ;
+    padding: 6px 18px 18px 18px;
 `;
 
 const Info = styled.p`
     font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+
     span {
         font-weight:bold;
+        margin-right: 9px;
+        letter-spacing:0.06px
     }
 `;
+
+const Imgprice = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 const Precio = styled.p`
-    font-size: 30px;
+    font-size: 36px;
+    padding-right: 180px;
     span {
         font-weight:bold;
     }
+`
+
+const Logo = styled.img`
+    max-height: 120px;
+    margin-right: 12px;
 `

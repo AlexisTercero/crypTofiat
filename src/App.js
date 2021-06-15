@@ -42,15 +42,15 @@ function App() {
 
   return (
     <Contenedor>
-      <div>
+      {/* <div>
         <Imagen 
           src={imagen} 
           alt="imagen crypto"
         />
-      </div>
+      </div> */}
       <div>
         <Heading>
-          Cotizá tus Cryptos al instante!
+          CrypTO{" > "}fiat
         </Heading>
         <Formulario 
           guardarMoneda={guardarMoneda}
@@ -68,11 +68,7 @@ const Contenedor = styled.div`
   max-width: 900px;
   margin: 0 auto;
   @media (min-width:992px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
   }
-
 `
 const Imagen = styled.img`
   max-width: 100%;
@@ -84,16 +80,16 @@ const Heading = styled.h1`
   text-align: left;
   font-weight: 900;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 80px;
+  letter-spacing: -3px;
 
   &::after {
     content: "";
-    width: 100px;
-    height: 6px;
-    background-color: yellow;
+    width: 100%;
+    margin-top: 3px;
+    height: 1px;
+    background-color: blue;
     display: block;
-
   }
-
 `
