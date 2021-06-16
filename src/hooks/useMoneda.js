@@ -13,7 +13,7 @@ const useMoneda = (label, stateInicial, opciones) => {
                 onChange={ e => actualizarState(e.target.value)}
                 value={state}
             >
-                <option value="">- Fiat Currencies -</option>
+                <option value="">Fiat Currencies</option>
                 {opciones.map(opcion => (
                     <option key={opcion.codigo} value={opcion.codigo}>{opcion.nombre}</option>
                 ))}
@@ -41,7 +41,7 @@ const Select = styled.select`
     display: block;
     padding: 1rem;
     --webkit-appearance: none;
-    border: 1px solid rgba(0, 191, 255, 0.9);
+    border: 1px solid rgba(49, 216, 255, 0.9);
     font-size: 1.1rem;
     font-weight: 100 ;
     color: white;

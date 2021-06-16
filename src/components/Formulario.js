@@ -54,7 +54,7 @@ const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
         <form
             onSubmit={cotizarMoneda}
         >
-            {error ?<Error mensaje="Todos los campos son obligatorios" />:null}
+            {error ?<Error mensaje="ALL FIELDS ARE REQUIRED" />:null}
             <SelectCripto />
             <SelectMonedas />
             <Boton 
@@ -68,12 +68,12 @@ const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
 export default Formulario
 
 const Boton = styled.input`
-    margin-top: 20px;
+    margin-top: 36px;
     font-weight: bold;
     font-size:20px;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid rgba(0, 191, 255, 1);
+    border: 2px solid blue;
     width: 100%;
     color: grey;
     transition: background-color .3s ease;
@@ -83,11 +83,11 @@ const Boton = styled.input`
         background-color: transparent;
         color: white;
         cursor:pointer;
-        /* border:1px solid rgba(0, 191, 255, 0.9);
-        outline: 0.3px solid blue; */
+        letter-spacing: .6px;
     }
 
     &:focus-visible{
+        border:1px solid rgba(49, 216, 255, 0.9);
         outline:0.3px solid blue;
     }
 `

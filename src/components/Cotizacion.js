@@ -23,7 +23,7 @@ export default Cotizacion
 const ResultadoDiv = styled.div`
     background:transparent;
     color: white;
-    border: 1px solid blue;
+    border: 1px solid rgba(49, 216, 255, 1);
     /* outline: 0.3px solid blue; */
     font-family: Arial, Helvetica, sans-serif;
     margin-top:24px ;
@@ -35,10 +35,10 @@ const Info = styled.p`
     margin-top: 3px;
     margin-bottom: 0px;
 
+
     span {
         font-weight:bold;
         margin-right: 9px;
-        letter-spacing:0.06px
     }
 `;
 
@@ -48,8 +48,8 @@ const Imgprice = styled.div`
 `
 
 const Precio = styled.p`
-    font-size: 36px;
-    padding-right: 180px;
+    font-size: 30px;
+
     span {
         font-weight:bold;
     }

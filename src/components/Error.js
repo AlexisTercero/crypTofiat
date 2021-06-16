@@ -12,10 +12,11 @@ const Error = ({mensaje}) => {
 export default Error
 
 const MensajeError = styled.p`
-    color: red;
+    color: rgb(255, 44, 44);
     text-transform: uppercase;
-    padding: 1rem;
-    font-size: 30px;
+    margin-top:33px;
+    font-size: 20px;
+    letter-spacing: 2px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 `;

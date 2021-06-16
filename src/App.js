@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import styled from "@emotion/styled"
 import axios from "axios";
-import imagen from "./cryptomonedas.png"
+import imagen from "./crypTOfiat60px.png"
 import Formulario from "./components/Formulario"
 import Cotizacion from "./components/Cotizacion"
 import Spinner from "./components/Spinner"
@@ -42,15 +42,14 @@ function App() {
 
   return (
     <Contenedor>
-      {/* <div>
+      <div>
         <Imagen 
           src={imagen} 
           alt="imagen crypto"
         />
-      </div> */}
+      </div>
       <div>
-        <Heading>
-          CrypTO{" > "}fiat
+        <Heading>        
         </Heading>
         <Formulario 
           guardarMoneda={guardarMoneda}
@@ -67,28 +66,23 @@ export default App;
 const Contenedor = styled.div`
   max-width: 900px;
   margin: 0 auto;
+
   @media (min-width:992px) {
   }
 `
 const Imagen = styled.img`
-  max-width: 100%;
-  margin-top: 5rem;
+  height:60px;
+  margin-top: 3rem;
 ` 
 const Heading = styled.h1`
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
-  text-align: left;
-  font-weight: 900;
-  font-size: 50px;
-  margin-bottom: 30px;
-  margin-top: 80px;
-  letter-spacing: -3px;
+  color: transparent;
+  font-size: 1px;
 
   &::after {
     content: "";
     width: 100%;
     margin-top: 3px;
-    height: 1px;
+    height: 2px;
     background-color: blue;
     display: block;
   }
