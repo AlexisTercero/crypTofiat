@@ -12,11 +12,15 @@ const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
     const [ error, guardarError ] = useState(false);
 
     const MONEDAS = [
-        { codigo: "USD", nombre: "Dolar Estadounidense" },
-        { codigo: "ARS", nombre: "Peso Argento" },
-        { codigo: "MXN", nombre: "Peso Mexicano" },
-        { codigo: "EUR", nombre: "Euro" },
-        { codigo: "GBP", nombre: "Libra Esterlina" },
+        { codigo: "USD", nombre: "United States Dollar $ (USD)" },
+        { codigo: "ARS", nombre: "Argentine Peso $ (ARS)" },
+        { codigo: "PYG", nombre: "Paraguayan Guaraní ₲ (PYG)" },
+        { codigo: "MXN", nombre: "Mexican Peso $ (MXN)" },
+        { codigo: "EUR", nombre: "Euro € (EUR)" },
+        { codigo: "GBP", nombre: "Pound Sterling £ (GBP)" },
+        { codigo: "JPY", nombre: "Japanese Yen ¥ (JPY)" },
+        { codigo: "CRC", nombre: "Costa Rican Colón ₡ (CRC)" },
+        { codigo: "CAD", nombre: "Canadian Dollar $ (CAD)" },
     ]
 
 
@@ -27,7 +31,7 @@ const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
     //Ejecutar llamado a la API
     useEffect(() => {
         const consultarAPI = async () => {
-            const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD"
+            const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=100&tsym=USD"
 
             const resultado = await axios.get(url);
 
@@ -73,21 +77,25 @@ const Boton = styled.input`
     font-size:20px;
     padding: 10px;
     background-color: transparent;
-    border: 2px solid blue;
+    background-image: linear-gradient(to right, transparent, rgb(0, 34, 255));
+    border-radius: 0px 90px 90px 0px;
+    border:none;
     width: 100%;
     color: grey;
-    transition: background-color .3s ease;
+    transition: 250ms;
 
 
     &:hover {
-        background-color: transparent;
+        background-image: linear-gradient(to right, transparent, blue);
         color: white;
         cursor:pointer;
-        letter-spacing: .6px;
+        letter-spacing: .9px;
     }
 
     &:focus-visible{
         border:1px solid rgba(49, 216, 255, 0.9);
-        outline:0.3px solid blue;
+        border-radius: 0px 90px 90px 0px;
+        outline:none;
+        -moz-outline-radius: 50px;
     }
 `

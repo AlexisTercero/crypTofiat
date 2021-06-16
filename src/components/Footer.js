@@ -6,15 +6,19 @@ const Footer = () => {
         <Foot>
             <Contfoot>
                 <Row>
+                <Colimg>
+                    <a href="mailto:alexisdealmeyda@gmail.com" id="logo">
+                    <img src="/images/envelope.svg" alt="E-mail" />
+                    </a>
+                    </Colimg>
                     <Col>
-                        <h4>ALEXIS DE ALMEYDA</h4>
+                        <p>ALEXIS DE ALMEYDA © 2021</p>
                     </Col>
-                    <Col>
-                        <h4>alexisdealmeyda@gmail.com</h4>
-                    </Col>
-                    <Col>
-                        <h4>GitHub</h4>
-                    </Col>
+                    <Colimg>
+                    <a href="https://github.com/AlexisTercero" id="logo">
+                    <img src="/images/github.svg" alt="GitHubLogo" />
+                    </a>
+                    </Colimg>
                 </Row>
             </Contfoot>           
         </Foot>
@@ -27,23 +31,41 @@ export default Footer
 
 const Foot = styled.div`
     color:grey;
-    background-color: blue;
-    padding-top: 0em;
+    /* background-image: linear-gradient(transparent, blue);; */
+    background-color: #000212;
+    padding-top: 0.3em;
     position: relative;
     bottom: 0;
-    width: 100%;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
 `
 
 const Contfoot = styled.div`
     color:grey;
-    font-family: helvetica;
-    font-weight: lighter;
-`
-const Row = styled.div`
+    font-size: 12px;
+    font-style: oblique;
+    position: relative;
+    padding-left: 9px;
+    padding-right: 9px;
 
 `
+const Row = styled.footer`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+`
+const Colimg = styled.div`
+    width: 27px;
+    opacity: 50%;
+    &:hover{
+        opacity: 80%;
+    }
+`
+
 
 const Col = styled.div`
-
+    
 `
 

@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import styled from "@emotion/styled"
 import axios from "axios";
-import imagen from "./crypTOfiat60px.png"
+import imagen from "./crypTOfiat.svg"
 import Formulario from "./components/Formulario"
 import Cotizacion from "./components/Cotizacion"
 import Footer from "./components/Footer"
@@ -44,12 +44,12 @@ function App() {
   return (
     <Pagecont>
     <Contenedor>
-      <div>
+      <Imgcont>
         <Imagen 
           src={imagen} 
           alt="imagen crypto"
         />
-      </div>
+      </Imgcont>
       <div>
         <Heading>        
         </Heading>
@@ -75,18 +75,24 @@ const Pagecont = styled.div`
 `
 
 const Contenedor = styled.div`
-  max-width: 900px;
+  max-width: 60vw;
   min-width: 60vw;
   margin: 0 auto;
+  margin-top: 3rem;
   flex:1;
 
   @media (min-width:992px) {
   }
 `
+const Imgcont = styled.div`
+`
+
 const Imagen = styled.img`
-  height:60px;
-  margin-top: 3rem;
+  max-width:24vw;
+  min-width: 175px;
+  margin-top: 0rem;
 ` 
+
 const Heading = styled.h1`
   color: transparent;
   font-size: 1px;
@@ -96,7 +102,7 @@ const Heading = styled.h1`
     width: 100%;
     margin-top: 3px;
     height: 2px;
-    background-color: blue;
+    background-image: linear-gradient(to right,rgb(0, 34, 255), transparent);
     display: block;
   }
 `
