@@ -4,6 +4,7 @@ import axios from "axios";
 import imagen from "./crypTOfiat60px.png"
 import Formulario from "./components/Formulario"
 import Cotizacion from "./components/Cotizacion"
+import Footer from "./components/Footer"
 import Spinner from "./components/Spinner"
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
   const componente = (cargando) ? <Spinner /> : <Cotizacion resultado={resultado} />
 
   return (
+    <Pagecont>
     <Contenedor>
       <div>
         <Imagen 
@@ -57,15 +59,26 @@ function App() {
         />
       {componente}
       </div>      
-    </Contenedor>   
+    </Contenedor>  
+    <Footer /> 
+    </Pagecont>
   );
 }
 
 export default App;
 
+const Pagecont = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+`
+
 const Contenedor = styled.div`
   max-width: 900px;
+  min-width: 60vw;
   margin: 0 auto;
+  flex:1;
 
   @media (min-width:992px) {
   }
