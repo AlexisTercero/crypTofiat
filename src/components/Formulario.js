@@ -81,15 +81,15 @@ const Boton = styled.input`
     border-radius: 0px 90px 90px 0px;
     border:none;
     width: 100%;
-    color: grey;
+    color: #b0bdff;
     transition: 250ms;
 
 
     &:hover {
-        background-image: linear-gradient(to right, transparent, blue);
+        background-image: linear-gradient(to right, transparent, #31d8ff);
         color: white;
         cursor:pointer;
-        letter-spacing: .9px;
+        letter-spacing: 1px;
     }
 
     &:focus-visible{

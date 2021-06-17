@@ -4,23 +4,21 @@ import styled from '@emotion/styled'
 const Footer = () => {
     return (
         <Foot>
-            <Contfoot>
-                <Row>
+            <Row>
                 <Colimg>
                     <a href="mailto:alexisdealmeyda@gmail.com" id="logo">
                     <img src="/images/envelope.svg" alt="E-mail" />
                     </a>
-                    </Colimg>
-                    <Col>
-                        <p>ALEXIS DE ALMEYDA © 2021</p>
-                    </Col>
-                    <Colimg>
+                </Colimg>
+                <Col>
+                    <p>ALEXIS DE ALMEYDA © 2021</p>
+                </Col>
+                <Colimg>
                     <a href="https://github.com/AlexisTercero" id="logo">
                     <img src="/images/github.svg" alt="GitHubLogo" />
                     </a>
-                    </Colimg>
-                </Row>
-            </Contfoot>           
+                </Colimg>
+            </Row>        
         </Foot>
     )
 }
@@ -31,9 +29,13 @@ export default Footer
 
 const Foot = styled.div`
     color:grey;
-    /* background-image: linear-gradient(transparent, blue);; */
+    font-size: 12px;
+    font-style: oblique;
+    box-shadow: 0px 9px 12px #b0bdff;
     background-color: #000212;
     padding-top: 0.3em;
+    padding-left: 9px;
+    padding-right: 9px;
     position: relative;
     bottom: 0;
     min-width: 100vw;
@@ -41,15 +43,6 @@ const Foot = styled.div`
     flex-direction: column;
 `
 
-const Contfoot = styled.div`
-    color:grey;
-    font-size: 12px;
-    font-style: oblique;
-    position: relative;
-    padding-left: 9px;
-    padding-right: 9px;
-
-`
 const Row = styled.footer`
     display: flex;
     justify-content: space-evenly;

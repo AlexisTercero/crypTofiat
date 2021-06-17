@@ -8,7 +8,29 @@ const Cotizacion = ({resultado}) => {
     return (
        <ResultadoDiv>
             <Imgprice>
-                <Logo src={	`https://www.cryptocompare.com/${resultado.IMAGEURL}`}></Logo><Precio><span>{resultado.PRICE}</span><br></br><Info>High: <span className="green">{resultado.HIGHDAY}</span> Low: <span className="red">{resultado.LOWDAY}</span><Info>24hs:<span className="grey"> {resultado.CHANGEPCT24HOUR}%</span><Info>Last Update: <span className="grey">{resultado.LASTUPDATE}</span> </Info></Info></Info> </Precio>                
+                <Collogo>
+                    <Logo src={	`https://www.cryptocompare.com/${resultado.IMAGEURL}`}></Logo>
+                </Collogo>
+                <Col>
+                    <Precio>
+                        {resultado.PRICE}
+                        <Info>{"High: "} 
+                            <span className="green">
+                                {resultado.HIGHDAY}
+                            </span>
+                        </Info> 
+                        <Info> {"Low: "}    
+                            <span className="red">
+                                {resultado.LOWDAY}
+                            </span>
+                        </Info> 
+                        <Info>{"24hs: "}
+                            <span className="grey"> 
+                            {resultado.CHANGEPCT24HOUR}%
+                            </span>{/* <Info>Last Update: <span className="grey">{resultado.LASTUPDATE}</span> </Info> */}
+                        </Info>
+                    </Precio>
+                </Col>
             </Imgprice>
        </ResultadoDiv>
     );
@@ -21,43 +43,52 @@ const ResultadoDiv = styled.div`
     color: black;
     border: none;
     border-radius: 90px 0px 0px 90px;
-    /* outline: 0.3px solid blue; */
-    font-family: Arial, Helvetica, sans-serif;
     margin-top:24px ;
     padding: 6px 18px 6px 18px;
-    min-height: 18.3vh;
-    max-height: 18vh;
-`;
-
-const Info = styled.p`
-    font-size: 18px;
-    margin-top: 3px;
-    margin-bottom: 0px;
-    color: grey;
-
-
-    span {
-        font-weight:bold;
-        margin-right: 9px;
-    }
+    min-height: 13vh;
+    max-height: 16vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly
 `;
 
 const Imgprice = styled.div`
     display: flex;
     align-items: center;
+    align-self: flex-start;
+    justify-content: space-evenly;
     margin-left: 12px;
+`
+const Collogo = styled.div`
+    display: flex;
+`
+const Col = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;   
 `
 
 const Precio = styled.p`
-    font-size: 30px;
+    font-size: 3vh;
     color:black;
+    font-weight:bold;
+    letter-spacing: -2px;
 
-    span {
-        font-weight:bold;
-    }
 `
+const Info = styled.p`
+    margin-top: 2px;
+    margin-bottom: 0px;
+    color: grey;
+    font-size: 1.6vh;
+    font-weight:lighter;
+    letter-spacing: 0;
+    span {
+        letter-spacing: -0.9px;
+    }
+`;
 
 const Logo = styled.img`
-    max-height: 110px;
+    max-height: 100px;
     margin-right: 21px;
 `
