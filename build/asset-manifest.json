@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5358db3d.chunk.css",
+    "main.js": "/static/js/main.3fc0a5fd.chunk.js",
+    "main.js.map": "/static/js/main.3fc0a5fd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b2970253.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b2970253.js.map",
+    "static/js/2.23909977.chunk.js": "/static/js/2.23909977.chunk.js",
+    "static/js/2.23909977.chunk.js.map": "/static/js/2.23909977.chunk.js.map",
+    "static/js/3.8676f2e6.chunk.js": "/static/js/3.8676f2e6.chunk.js",
+    "static/js/3.8676f2e6.chunk.js.map": "/static/js/3.8676f2e6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5358db3d.chunk.css.map": "/static/css/main.5358db3d.chunk.css.map",
+    "static/js/2.23909977.chunk.js.LICENSE.txt": "/static/js/2.23909977.chunk.js.LICENSE.txt",
+    "static/media/crypTOfiat.0c172a11.svg": "/static/media/crypTOfiat.0c172a11.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2970253.js",
+    "static/js/2.23909977.chunk.js",
+    "static/css/main.5358db3d.chunk.css",
+    "static/js/main.3fc0a5fd.chunk.js"
+  ]
+}
