@@ -15,7 +15,7 @@ I used React.JS, Adobe Illustrator and Adobe Photoshop.</p>
 ## 🛠️ Technologies
 
 <ul>
-  <li><a href="https://reactjs.org/">React</a></li>
+  <li><a href="https://reactjs.org/">React.JS</a></li>
   <li><a href="https://www.adobe.com/la/products/illustrator.html">Adobe Illustrator</a></li>
 </ul>
 
