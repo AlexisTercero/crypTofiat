@@ -16,7 +16,6 @@ I used React.JS, Adobe Illustrator and Adobe Photoshop.</p>
 
 <ul>
   <li><a href="https://reactjs.org/">React</a></li>
-  <li><a href="https://skeleton-framework.github.io/">Skeleton framework</a></li>
   <li><a href="https://www.adobe.com/la/products/illustrator.html">Adobe Illustrator</a></li>
 </ul>
 
