@@ -42,7 +42,7 @@ const Select = styled.select`
     padding: 1rem;
     --webkit-appearance: none;
     border: 1px solid rgba(49, 216, 255, 0.9);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100 ;
     color: white;
     background-color: transparent;
@@ -51,5 +51,7 @@ const Select = styled.select`
     &:focus-visible{
         outline:0.3px solid blue;
     }
-    
+    @media (max-width: 500px){
+        font-size: 0.66rem ;
+    }    
 `

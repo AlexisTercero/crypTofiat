@@ -50,7 +50,10 @@ const ResultadoDiv = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    @media (max-width: 450px) {
+    background-image: linear-gradient(to right, white,white,white, white,white, white,white, white,transparent);
+  }
 `;
 
 const Imgprice = styled.div`
@@ -59,14 +62,31 @@ const Imgprice = styled.div`
     align-self: flex-start;
     justify-content: space-evenly;
     margin-left: 12px;
+    @media (max-width: 500px) {
+    margin-left: 0px;
+  }
 `
 const Collogo = styled.div`
     display: flex;
+    @media (max-width: 500px) {
+    height:70px;
+    width: 70px;
+    margin-left: 0px;
+    margin-right: 12px;
+  }
+    @media (max-width: 300px){
+        height:60px;
+        width: 60px;
+        margin-right: 3px;
+    }
 `
 const Col = styled.div`
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;  
+    @media (max-width: 500px) {
+    font-size:1vh;
+  } 
 `
 
 const Precio = styled.p`
@@ -74,7 +94,9 @@ const Precio = styled.p`
     color:black;
     font-weight:bold;
     letter-spacing: -2px;
-
+    @media (max-width: 500px) {
+        font-size: 18px;
+  }
 `
 const Info = styled.p`
     margin-top: 2px;
@@ -86,9 +108,15 @@ const Info = styled.p`
     span {
         letter-spacing: -0.9px;
     }
+    @media (max-width: 500px) {
+        font-size: 1.4vh;
+  }
 `;
 
 const Logo = styled.img`
-    max-height: 100px;
-    margin-right: 21px;
+    max-height: 120px;
+    margin-right: 30px;
+    @media (max-width:600px){
+        max-height: 100px;
+    }
 `

@@ -41,6 +41,9 @@ const Foot = styled.div`
     min-width: 100vw;
     display: flex;
     flex-direction: column;
+    @media (max-width: 500px){
+        font-size: 10px;
+    }
 `
 
 const Row = styled.footer`
@@ -54,6 +57,9 @@ const Colimg = styled.div`
     opacity: 50%;
     &:hover{
         opacity: 80%;
+    }
+    @media (max-width: 500px) {
+        width: 20px;
     }
 `
 
