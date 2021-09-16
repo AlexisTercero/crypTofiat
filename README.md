@@ -30,7 +30,7 @@ I used React.JS, Adobe Illustrator and Adobe Photoshop.</p>
 ## 🚀 Installation
 
 ```
-$ git clone https://github.com/AlexisTercero/DogCatAppointmentApp.git
+$ git clone https://github.com/AlexisTercero/crypTofiat.git
 $ npm install
 $ npm start
 ```
